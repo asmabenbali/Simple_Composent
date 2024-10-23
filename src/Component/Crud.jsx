@@ -32,6 +32,7 @@ export default function Crud() {
 
     return (
         <>
+           <h1 className="title">Crud systeme</h1>
             <div>
                 nom : <input type="text" value={nom} onChange={(e) => setNom(e.target.value)} />
             </div>
@@ -43,7 +44,7 @@ export default function Crud() {
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 {error && <div style={{ color: "red", marginTop: "5px" }}>{error}</div>} {/* Message d'erreur */}
             </div>
-            <div>
+            <div >
                 <select value={ville} onChange={(e) => setVille(e.target.value)}>
                     <option>Agadir</option>
                     <option>Ouarzazate</option>
@@ -51,7 +52,7 @@ export default function Crud() {
                     <option>Casablanca</option>
                 </select>
             </div>
-            <div>
+            <div >
                 <select value={filliere} onChange={(e) => setFilliere(e.target.value)}>
                     <option>développement informatique</option>
                     <option>gestion des entreprises</option>
